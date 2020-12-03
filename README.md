@@ -23,6 +23,17 @@ Cada módulo pode conter:
 - repositories: Sincronização de dados, é possível construir modelo mockado.
 - components: Views utilizadas apenas no módulo em questão.
 
+## Uso de imagens.
+
+Uso de imagens públicas de pessoas privadas neste projeto.
+As imagens foram retiradas dos seguinte sites: 
+https://icons8.com/
+https://www.freepik.com/
+https://www.royalcanin.com/br
+
+Se alguma pessoa com direto sobre estas imagens se sentir prejudicado com este uso, por favor, deixe me saber e eu removerei.
+Email para contato: michel1tonon@gmail.com
+
 # Para rodar
 
 Use o terminal para criar os arquivos gerados automáticamente do MOBX
