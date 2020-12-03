@@ -26,10 +26,10 @@ Cada módulo pode conter:
 ## Uso de imagens.
 
 Uso de imagens públicas de pessoas privadas neste projeto.
-As imagens foram retiradas dos seguinte sites: 
-https://icons8.com/
-https://www.freepik.com/
-https://www.royalcanin.com/br
+As imagens foram retiradas dos seguinte sites: <br/> 
+https://icons8.com/  <br/>
+https://www.freepik.com/ <br/>
+https://www.royalcanin.com/br 
 
 Se alguma pessoa com direto sobre estas imagens se sentir prejudicado com este uso, por favor, deixe me saber e eu removerei.
 Email para contato: michel1tonon@gmail.com
