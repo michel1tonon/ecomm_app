@@ -16,7 +16,7 @@ Exemplo de uma Home Page Ecomm com carrossel, scroll de componentes e a reutiliz
 
 Cada módulo pode conter:
 
-- controller: Controller principal do módulo.
+- controller: Controller principal, deve conter as regras de negócio da página.
 - module: Arquivo com definição de rotas e injeção de dependências.
 - page: View principal do módulo
 - store: Armazena dados utilizados no módulo.
