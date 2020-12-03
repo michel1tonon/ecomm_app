@@ -1,16 +1,32 @@
-# example_home
+# Exemplo Home
 
-A new Flutter application.
+![Farmers Market Finder Demo](example_home.gif)
 
-## Getting Started
+Projeto de exemplo de uma página com dificuldade médio/difícil sem o uso de libs de terceiro.
+A ideia é mostrar que com Flutter é possível fazer quase qualquer coisa na interface sem o uso de bibliotecas.
 
-This project is a starting point for a Flutter application.
+Exemplo de uma Home Page Ecomm com carrossel, scroll de componentes e a reutilização do carrossel em produtos.
 
-A few resources to get you started if this is your first Flutter project:
+## Estrutura raiz do projeto
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- modules: Módulos individuais do projeto.
+- shared: Itens que podem ser acessados por vários módulos.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Estrutura dos módulos.
+
+Cada módulo pode conter:
+
+- controller: Controller principal do módulo.
+- module: Arquivo com definição de rotas e injeção de dependências.
+- page: View principal do módulo
+- store: Armazena dados utilizados no módulo.
+- repositories: Sincronização de dados, é possível construir modelo mockado.
+- components: Views utilizadas apenas no módulo em questão.
+
+# Para rodar
+
+Use o terminal para criar os arquivos gerados automáticamente do MOBX
+****flutter packages pub run build_runner build****
+
+Após tudo configurado
+****flutter run****
