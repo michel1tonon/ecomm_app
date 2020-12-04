@@ -1,4 +1,4 @@
-# Exemplo Home
+# Página Home de Exemplo
 
 ![Farmers Market Finder Demo](example_home.gif)
 
