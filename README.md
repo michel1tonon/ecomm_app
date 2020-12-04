@@ -1,16 +1,43 @@
-# example_home
+# Exemplo Home
 
-A new Flutter application.
+![Farmers Market Finder Demo](example_home.gif)
 
-## Getting Started
+Projeto de exemplo de uma página com dificuldade médio/difícil sem o uso de libs de terceiro.
+A ideia é mostrar que com Flutter é possível fazer quase qualquer coisa na interface sem o uso de bibliotecas.
 
-This project is a starting point for a Flutter application.
+Exemplo de uma Home Page Ecomm com carrossel, scroll de componentes e a reutilização do carrossel em produtos.
 
-A few resources to get you started if this is your first Flutter project:
+## Estrutura raiz do projeto
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- modules: Módulos individuais do projeto.
+- shared: Itens que podem ser acessados por vários módulos.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Estrutura dos módulos.
+
+Cada módulo pode conter:
+
+- controller: Controller principal, deve conter as regras de negócio da página.
+- module: Arquivo com definição de rotas e injeção de dependências.
+- page: View principal do módulo
+- store: Armazena dados utilizados no módulo.
+- repositories: Sincronização de dados, é possível construir modelo mockado.
+- components: Views utilizadas apenas no módulo em questão.
+
+## Uso de imagens.
+
+Uso de imagens públicas de pessoas privadas neste projeto.
+As imagens foram retiradas dos seguinte sites: <br/> 
+https://icons8.com/  <br/>
+https://www.freepik.com/ <br/>
+https://www.royalcanin.com/br 
+
+Se alguma pessoa com direto sobre estas imagens se sentir prejudicado com este uso, por favor, deixe me saber e eu removerei.
+Email para contato: michel1tonon@gmail.com
+
+# Para rodar
+
+Use o terminal para criar os arquivos gerados automáticamente do MOBX
+****flutter packages pub run build_runner build****
+
+Após tudo configurado
+****flutter run****
