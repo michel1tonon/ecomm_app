@@ -18,10 +18,7 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Petz Jobs',
-      theme: ThemeData(
-        fontFamily: 'Gotham',
-      ),
+      title: 'Example Home',
       // set your initial route
       initialRoute: "/",
       // add Modular to manage the routing system
