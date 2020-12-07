@@ -51,19 +51,19 @@
           "id": 3001,
           "description": "Ração Seca Royal Canin saco Sterilised - Gatos Adultos - 10KG",
           "thumbnail": "https://cdn.royalcanin-weshare-online.io/4H4-IW0BGYYl5D-lrTDB/v2/8-br-l-cat-product-pack-shot-fbn-breed-content-cats?w=640&auto=compress&fm=jpg",
-          "price": "35,10"
+          "price": 35.15
         },
         {
           "id": 3002,
           "description": "Ração Úmida Royal Canin saco Sterilised - Gatos Filhotes - 10KG",
           "thumbnail": "https://cdn.royalcanin-weshare-online.io/2X4xIW0BGYYl5D-lGDA2/v1/2-br-l-kitten-product-pack-shot-kitten-content?w=640&auto=compress&fm=jpg",
-          "price": "30,40"
+          "price": 30.49
         },
         {
           "id": 3003,
           "description": "Ração Seca Royal Canin saco - Gatos com sensibilidades comuns - Gatos Adultos - 10KG",
           "thumbnail": "https://cdn.royalcanin-weshare-online.io/_7kiZW0B2t6cTeuUOhg3/v1/15-br-l-cat-care-pack-shot-spt-cat-care-spt-products?w=640&auto=compress&fm=jpg",
-          "price": "40,50"
+          "price": 40.57
         }
       ]
     },
@@ -76,19 +76,19 @@
           "id": 4001,
           "description": "Ração Úmida Royal Canin saco Sterilised - Gatos Filhotes - 10KG",
           "thumbnail": "https://cdn.royalcanin-weshare-online.io/2X4xIW0BGYYl5D-lGDA2/v1/2-br-l-kitten-product-pack-shot-kitten-content?w=640&auto=compress&fm=jpg",
-          "price": "30,40"
+          "price": 30.49
         },
         {
           "id": 4002,
           "description": "Ração Seca Royal Canin saco Sterilised - Gatos Adultos - 10KG",
           "thumbnail": "https://cdn.royalcanin-weshare-online.io/4H4-IW0BGYYl5D-lrTDB/v2/8-br-l-cat-product-pack-shot-fbn-breed-content-cats?w=640&auto=compress&fm=jpg",
-          "price": "35,10"
+          "price": 35.15
         },
         {
           "id": 4003,
           "description": "Ração Seca Royal Canin saco - Gatos com sensibilidades comuns - Gatos Adultos - 10KG",
           "thumbnail": "https://cdn.royalcanin-weshare-online.io/_7kiZW0B2t6cTeuUOhg3/v1/15-br-l-cat-care-pack-shot-spt-cat-care-spt-products?w=640&auto=compress&fm=jpg",
-          "price": "40,50"
+          "price": 40.57
         }
       ]
     }

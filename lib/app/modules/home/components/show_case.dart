@@ -1,3 +1,5 @@
+import '../../../shared/models/product.dart';
+
 import '../models/component.dart';
 import '../../../shared/components/carousel.dart';
 import '../../../shared/components/styles.dart';
@@ -6,12 +8,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class ShowCase extends StatelessWidget {
-
   final ComponentModel component;
 
-  const ShowCase(this.component, {
+  final Function(ProductModel product) onTapProduct;
+  final Function(ProductModel product) onTapBuy;
+
+  const ShowCase(
+    this.component, {
     Key key,
-  }) : super(key: key);
+    this.onTapProduct,
+    this.onTapBuy,
+  }) :
+        assert(component != null),
+        assert(onTapProduct != null),
+        assert(onTapBuy != null),
+        super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +40,13 @@ class ShowCase extends StatelessWidget {
           height: 290,
           arrowNavigationWidth: MediaQuery.of(context).size.width * 0.7,
           showDots: false,
-          children: component.children.map((p) =>
-              _carouselItem(p)).toList().cast<Widget>(),
+          children: component.children
+              .map((p) => InkWell(
+                    onTap: () => onTapProduct(ProductModel.fromJson(p)),
+                    child: _carouselItem(p),
+                  ))
+              .toList()
+              .cast<Widget>(),
         )
       ],
     );
@@ -42,8 +58,11 @@ class ShowCase extends StatelessWidget {
       children: [
         SizedBox(
           height: 130,
-          child: Image.network(
-            product["thumbnail"],
+          child: Hero(
+            tag: "${product["id"]}",
+            child: Image.network(
+              product["thumbnail"],
+            ),
           ),
         ),
         SizedBox(
@@ -73,7 +92,7 @@ class ShowCase extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => onTapBuy(ProductModel.fromJson(product)),
           ),
         ),
       ],

@@ -21,6 +21,9 @@ class AppWidget extends StatelessWidget {
       title: 'Example Home',
       // set your initial route
       initialRoute: "/",
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white
+      ),
       // add Modular to manage the routing system
       onGenerateRoute: Modular.generateRoute,
       navigatorKey: Modular.navigatorKey,

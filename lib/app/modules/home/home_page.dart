@@ -1,3 +1,6 @@
+import 'package:example_home/app/shared/helper/nav.dart';
+import 'package:example_home/app/shared/models/product.dart';
+
 import 'components/category_list.dart';
 import 'components/home_item.dart';
 import 'components/show_case.dart';
@@ -15,7 +18,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends ModularState<HomePage, HomeController> {
-
   @override
   void initState() {
     super.initState();
@@ -25,15 +27,13 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0.5,
       ),
       body: Observer(
-        builder: (_) => ListView(
-          children: buildComponents(),
-        )
-      ),
+          builder: (_) => ListView(
+                children: buildComponents(),
+              )),
     );
   }
 
@@ -53,7 +53,9 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
           return buildShowCase(e);
 
         default:
-          return SizedBox.shrink(key: Key(e.id.toString()),);
+          return SizedBox.shrink(
+            key: Key(e.id.toString()),
+          );
       }
     }).toList();
   }
@@ -67,11 +69,13 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
       bottom: 0,
       child: Carousel(
         height: MediaQuery.of(context).size.width * 0.5,
-        children: component.children.map((image) => Image.network(
-          image,
-          key: Key(image),
-          fit: BoxFit.cover,
-        )).toList(),
+        children: component.children
+            .map((image) => Image.network(
+                  image,
+                  key: Key(image),
+                  fit: BoxFit.cover,
+                ))
+            .toList(),
       ),
     );
   }
@@ -92,7 +96,19 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
   Widget buildShowCase(ComponentModel component) {
     return HomeItem(
       key: Key(component.id.toString()),
-      child: ShowCase(component),
+      child: ShowCase(
+        component,
+        onTapBuy: controller.cartStore.addProduct,
+        onTapProduct: onTapProduct,
+      ),
     );
+  }
+
+  /// ///////////////////////////////////////////
+  /// NAVIGATION ////////////////////////////////
+  /// ///////////////////////////////////////////
+
+  void onTapProduct(ProductModel product) {
+    pushNamed("/product/${product.id}", arguments: product);
   }
 }

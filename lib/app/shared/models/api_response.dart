@@ -4,8 +4,6 @@ import 'package:dio/dio.dart';
 // Saves the return access to the backend.
 class ApiResponse {
 
-  static const int STATUS_404 = 404;
-
   final bool _ok;
   final Response _response;
   final String _error;
