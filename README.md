@@ -1,11 +1,11 @@
-# Página Home de Exemplo
+# Ecomm Exemplo
 
 ![Farmers Market Finder Demo](example_home.gif)
 
-Projeto de exemplo de uma página com dificuldade médio/difícil sem o uso de libs de terceiro.
+Projeto de exemplo de página com dificuldade médio/difícil sem o uso de libs de terceiro.
 A ideia é mostrar que com Flutter é possível fazer qualquer interface sem o uso de bibliotecas externas.
 
-Exemplo de uma Home Page Ecomm com carrossel, scroll de componentes e a reutilização do carrossel em produtos.
+Exemplo de um App Ecomm com carrossel, scroll de componentes e a reutilização do carrossel em produtos.
 
 ## Estrutura raiz do projeto
 
