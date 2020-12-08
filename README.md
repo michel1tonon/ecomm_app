@@ -1,4 +1,4 @@
-# Ecomm Exemplo
+# Ecomm App
 
 ![Farmers Market Finder Demo](example_home.gif)
 
