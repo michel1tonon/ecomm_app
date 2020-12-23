@@ -19,6 +19,7 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Example Home',
+      debugShowCheckedModeBanner: false,
       // set your initial route
       initialRoute: "/",
       theme: ThemeData(
